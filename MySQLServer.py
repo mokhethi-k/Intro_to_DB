@@ -1,8 +1,8 @@
 from getpass import getpass
-from mysql.connector import connect, Error
+import mysql.connector
 
 try:
-    with connect(
+    with mysql.connector.connect(
         host = "localhost",
         user = input("Enter username: "),
         password = input("Enter password: ")
@@ -12,5 +12,5 @@ try:
             mycursor.execute(create_database_query)
             print("Database 'alx_book_store' created successfully!")
             
-except Error as e:
+except mysql.connector.Error as e:
     print(e)
