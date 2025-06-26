@@ -1,1 +1,1 @@
-# Intro_to_DB
+This repo is for my project from ALX backend web development Under the topic "Introduction to Databases
